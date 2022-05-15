@@ -1,20 +1,12 @@
 import './App.css';
-import Feed from './components/Feed';
-import Header from './components/Header';
-import Menu from './components/Menu';
-import News from './components/News';
+import Content from './components/layout/Content';
+import Header from './components/layout/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <Header />
-      <div className="container-fluid">
-        <div className="row p-3">
-          <Menu />
-          <Feed />
-          <News />
-        </div>
-      </div>
+      <Content />
     </div>
   );
 }
