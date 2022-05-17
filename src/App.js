@@ -1,12 +1,10 @@
 import './App.css';
-import Content from './components/layout/Content';
-import Header from './components/layout/Header';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App container-fluid">
-      <Header />
-      <Content />
+    <div className="App">
+      <Home />
     </div>
   );
 }
