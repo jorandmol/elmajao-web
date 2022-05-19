@@ -1,20 +1,24 @@
-import Header from "../components/layout/Header";
-import Menu from "../components/layout/Menu";
+import Header from "../components/layout/Header"
+import ListGif from "../components/GifList"
+
+// style
+const menuSize = 0
+const contentSize = `col-md-${12-menuSize} text-center`
+
+const keyword = 'pandas'
 
 function Home() {
-  const menuSize = 2;
-  const contentSize = `col-md-${12-menuSize} text-center`;
   return (
     <div className="container-fluid">
       <Header />
       <div className="row py-3 px-2">
-        <Menu size={menuSize}/>
+        {/*<Menu size={menuSize}/>*/}
         <div className={contentSize}>
-          <h3>Qué rico, parsero</h3>
+          <ListGif keyword={keyword}/>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

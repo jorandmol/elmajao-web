@@ -8,7 +8,7 @@ function Menu({ size }) {
   const colSize = 'col-md-' + size;
   const optionClass = 'row py-2';
   return (
-    <section className={colSize}>
+    <menu className={colSize}>
       <div className="card">
         <div className="card-header text-center bg-white">
           <h5 class="mb-0">Menú</h5>
@@ -24,7 +24,7 @@ function Menu({ size }) {
           )}
         </div>
       </div>
-    </section>
+    </menu>
   );
 }
 

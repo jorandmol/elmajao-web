@@ -1,12 +1,4 @@
-html, body, #root, .App {
+.App {
     height: 100%;
     width: 100%;
-}
-
-body {
-    background-color: #f8f0fa;
-}
-
-h1, h2, h3, h4, h5 {
-    color: #0AA;
 }
