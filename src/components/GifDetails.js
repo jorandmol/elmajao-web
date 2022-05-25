@@ -1,25 +1,4 @@
-import { useState, useEffect } from 'react'
-import { getGifById } from '../services/gifService'
-
-function GifDetails({ params }) {
-    const [gif, setGif] = useState({})
-    const [loading, setLoading] = useState(false)
-    const { gifId } = params
-
-    useEffect(() => {
-        setLoading(true)
-        getGifById(gifId).then(
-            giphy => {
-                setGif(giphy)
-                setLoading(false)
-            }
-        )
-    }, [gifId])
-
-    if (loading) {
-        return <h3>Cargando el gif...</h3>
-    }
-
+function GifDetails({ gif }) {
     const uploadDate = new Date(gif.import_datetime)
 
     return (

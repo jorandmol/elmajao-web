@@ -1,9 +1,9 @@
 import './App.css';
-import Home from './pages/Home';
+import Home from './pages/Home/index';
 import { Route } from "wouter";
 import Header from './components/layout/Header';
-import ListGif from './pages/GifList';
-import GifDetails from './pages/GifDetails';
+import Search from './pages/Search/index';
+import Details from './pages/Details/index';
 
 function App() {
   
@@ -11,8 +11,8 @@ function App() {
     <div className="App text-center">
       <Header />
       <Route component={Home} path="/" />
-      <Route component={ListGif} path="/:keyword" />
-      <Route component={GifDetails} path="/gif/:gifId" />
+      <Route component={Search} path="/search/:keyword" />
+      <Route component={Details} path="/gif/:gifId" />
     </div>
   );
 }
