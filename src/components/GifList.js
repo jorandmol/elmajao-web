@@ -1,3 +1,4 @@
+import React from "react"
 import Gif from "../components/Gif"
 
 function GifList({ gifs }) {

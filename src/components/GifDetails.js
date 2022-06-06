@@ -1,3 +1,5 @@
+import React from "react"
+
 function GifDetails({ gif }) {
     const uploadDate = new Date(gif.import_datetime)
 
@@ -13,7 +15,7 @@ function GifDetails({ gif }) {
                 <div className="row border rounded mt-2">
                     <span className='d-block'>Creado por {gif.username}</span>
                     <span className='d-block'>Subido el {uploadDate.toLocaleDateString('es')}</span>
-                    <span className='d-block'>Pulsa <a href={gif.url} target="_blank" rel="noreferrer">aquí</a> para obtener más información</span>
+                    <span className='d-block'>Pulsa <a href={gif.url} target="_blank" rel="noopener noreferrer">aquí</a> para obtener más información</span>
                 </div>
             </div>
         </div>

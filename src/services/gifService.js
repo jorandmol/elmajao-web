@@ -6,6 +6,7 @@ export const getGifs = (keyword) => {
         .then(res => res.json())
         .then(jsonRes => {
             const data = jsonRes.data
+            console.log({ data })
             const gifs = data.map(image => {
                 const { id, title, images } = image 
                 const { url } = images.downsized_medium

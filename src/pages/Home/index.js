@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link, useLocation } from "wouter"
+import React, { useState } from "react";
+import { useLocation } from "wouter"
 import GifList from "../../components/GifList";
 import GifPopularList from "../../components/GifPopularList";
 import { useGifs } from "../../hooks/useGifs";

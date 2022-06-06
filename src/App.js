@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Home from './pages/Home/index';
 import { Route } from "wouter";

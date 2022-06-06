@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import GifDetails from "../../components/GifDetails"
 import { getGifById } from "../../services/gifService"
 

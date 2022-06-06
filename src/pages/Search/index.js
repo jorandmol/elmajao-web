@@ -1,3 +1,4 @@
+import React from "react"
 import GifList from "../../components/GifList"
 import { useGifs } from "../../hooks/useGifs"
 
